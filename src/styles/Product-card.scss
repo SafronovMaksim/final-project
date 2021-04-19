@@ -1,0 +1,43 @@
+.product-card{
+    
+    background-color: rgb(245, 193, 159);
+    width: 95%;
+    height: 300px;
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-top: 20px;
+    flex-direction: row;
+    background: rgb(189, 102, 2) radial-gradient(circle at 50% 0, rgba(255,255,255,.65), rgba(163, 92, 0, 0.35));
+    box-shadow:
+    inset rgba(0,0,0,.6) 0 -3px 8px,
+    inset rgba(252,255,255,.7) 0 3px 8px,
+  rgba(0,0,0,.8) 0 3px 8px -3px;
+  &:hover{
+      background-color: orange;
+      transition: all 0.1s ease-in;
+  }
+    &_image{
+        height: 300px;
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 15px;
+    }
+    &_text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        &-name{
+            font-size: 26px;
+        }
+        &-ingredients{
+            margin-top: auto;
+        }
+    }
+}

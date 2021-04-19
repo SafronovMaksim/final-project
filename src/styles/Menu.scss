@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dancing+Script:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    display: flex;
+    width: 120px;
+    top: 97.5px;
+    height: 150px;
+    background-color: white;    
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.3s ease-in;
+    transform: translateY(-300%);
+    .menu-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 100%;
+        li{
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 100%;
+            a{
+                color: #000;
+                border-bottom: 1px solid grey;
+                height: 100%;
+                width: 100%;
+                display: inline-block;
+                overflow-wrap: break-word;
+                font-family: 'Bangers', cursive;
+                &:hover{
+                    color:grey;
+                    text-decoration: none;
+                    transition: 0s;
+                }
+            }
+        }
+    }
+}
+.menu.active{
+    transform: translateX(0);
+}
